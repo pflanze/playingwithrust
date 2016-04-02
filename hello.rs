@@ -5,7 +5,7 @@ use std::env;
 
 fn main () {
     let mut x = env::args_os();
-    println!("The second element is {}",
-             x.nth(0).expect("no arg 0")
+    println!("The element is {}",
+             x.nth(1).expect("no arg 1")
              .to_str().expect("not unicode"));
 }
